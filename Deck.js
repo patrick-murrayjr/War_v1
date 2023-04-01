@@ -7,10 +7,14 @@ import Card from "./Card.js";
 
 */
 class Deck {
+  /*******************/
+  /* Class Proprties */
   cardStack = [];
   numRanks;
   numSuits;
 
+  /*****************/
+  /* Class Methods */
   constructor() {
     this.numRanks = 13;
     this.numSuits = 4;

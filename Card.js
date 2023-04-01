@@ -9,11 +9,15 @@
 
 */
 class Card {
+  /*******************/
+  /* Class Proprties */
   rank;
   suit;
   displayValue;
   pointValue;
 
+  /*****************/
+  /* Class Methods */
   constructor(rank, suit, pointValue) {
     this.rank = rank;
     this.suit = suit;

@@ -6,6 +6,8 @@ import Deck from "./Deck.js";
 
 */
 class Game {
+  /*******************/
+  /* Class Proprties */
   p1Card;
   p2Card;
   gameDeck;
@@ -13,6 +15,8 @@ class Game {
   Player2;
   outputArr = [];
 
+  /*****************/
+  /* Class Methods */
   constructor() {
     this.gameDeck = new Deck();
     this.Player1 = new Player();

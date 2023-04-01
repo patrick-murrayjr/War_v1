@@ -4,9 +4,13 @@
 
 */
 class Player {
+  /*******************/
+  /* Class Proprties */
   cardStack = [];
   score;
 
+  /*****************/
+  /* Class Methods */
   constructor() {
     this.resetPlayer();
   }

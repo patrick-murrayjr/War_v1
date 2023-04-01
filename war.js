@@ -1,7 +1,7 @@
 import Game from "./Game.js";
 
-// Driver for Game
-let myGame = new Game();
+// Game Driver
+const myGame = new Game();
 myGame.dealCards();
 myGame.playGame();
 myGame.displayResults();
