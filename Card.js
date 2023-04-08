@@ -11,38 +11,40 @@
 class Card {
   /*******************/
   /* Class Proprties */
-  rank;
-  suit;
-  displayValue;
-  pointValue;
+  /* Private */
+  #rank;
+  #suit;
+  #displayValue;
+  #pointValue;
 
   /*****************/
   /* Class Methods */
   constructor(rank, suit, pointValue) {
-    this.rank = rank;
-    this.suit = suit;
-    this.displayValue = rank + suit;
+    this.#rank = rank;
+    this.#suit = suit;
+    this.#displayValue = rank + suit;
     // Used for comparing which card outranks another
-    this.pointValue = pointValue;
+    this.#pointValue = pointValue;
   }
 
-  //getRank -  returns the rank(face value) of the card
+  //getRank -  returns the #rank(face value) of the card
   getRank() {
-    return this.rank;
+    return this.#rank;
   }
 
   //getSuit -  returns the suit(ex. C for Clubs, D for Diamonds) of the card
   getSuit() {
-    return this.suit;
+    return this.#suit;
   }
 
   //getDisplayValue -  returns the rank and suit of the card in the format Rank-Suit (ex. AS => Ace of Spades)
   getDisplayValue() {
-    return this.displayValue;
+    return this.#displayValue;
   }
+
   //getPointValue -  returns the point value assigned to the card used for comparing which card outranks another
   getPointValue() {
-    return this.pointValue;
+    return this.#pointValue;
   }
 }
 export default Card;
